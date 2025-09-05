@@ -1,0 +1,16 @@
+# Zip files
+*.zip
+
+# Folders
+root/
+scalable_sol/
+.next/
+.idea/
+explore/
+node_modules/
+
+# Windows special files
+nul
+con
+prn
+aux
