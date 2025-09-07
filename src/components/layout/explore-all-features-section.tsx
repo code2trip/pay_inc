@@ -22,58 +22,7 @@ const ArrowDownIcon = () => (
 // Иконка для кнопки
 const ButtonIcon = () => (
   <div className="explore-button-icon">
-    <svg fill="none" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
-      <path d="M17,7l-10,10M17,7h-9M17,7v9" stroke="white" strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" />
-    </svg>
-  </div>
-)
-
-// Иконки для карточек функций
-const CustomCheckoutIcon = () => (
-  <div className="explore-feature-icon">
-    <svg fill="none" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
-      <path d="M3 10h18M7 15h1m4 0h1m-7 4h12a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z" stroke="white" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" />
-    </svg>
-  </div>
-)
-
-const AnalyticsIcon = () => (
-  <div className="explore-feature-icon">
-    <svg fill="none" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
-      <path d="M3 3v18h18M18 9l-5 5-4-4-3 3" stroke="white" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" />
-    </svg>
-  </div>
-)
-
-const SecurityIcon = () => (
-  <div className="explore-feature-icon">
-    <svg fill="none" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
-      <path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z" stroke="white" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" />
-    </svg>
-  </div>
-)
-
-const MultiCurrencyIcon = () => (
-  <div className="explore-feature-icon">
-    <svg fill="none" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
-      <path d="M12 1v22M17 5H9.5a3.5 3.5 0 000 7h5a3.5 3.5 0 010 7H6" stroke="white" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" />
-    </svg>
-  </div>
-)
-
-const ApiIcon = () => (
-  <div className="explore-feature-icon">
-    <svg fill="none" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
-      <path d="M9 12l2 2 4-4M21 12a9 9 0 11-18 0 9 9 0 0118 0z" stroke="white" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" />
-    </svg>
-  </div>
-)
-
-const SupportIcon = () => (
-  <div className="explore-feature-icon">
-    <svg fill="none" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
-      <path d="M8 12h.01M12 12h.01M16 12h.01M21 12c0 4.418-4.03 8-9 8a9.863 9.863 0 01-4.255-.949L3 20l1.395-3.72C3.512 15.042 3 13.574 3 12c0-4.418 4.03-8 9-8s9 3.582 9 8z" stroke="white" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" />
-    </svg>
+    <img src="/send.svg" alt="Send" className="w-5 h-5" />
   </div>
 )
 
@@ -98,55 +47,82 @@ export function ExploreAllFeaturesSection() {
         <div className="explore-features-grid">
           {/* Custom Branded Checkout */}
           <div className="explore-feature-card">
-            <CustomCheckoutIcon />
+            <img src="/credit-card.svg" alt="Credit Card" className="explore-feature-icon" />
             <h3 className="explore-feature-title">Custom Branded Checkout</h3>
             <p className="explore-feature-description">
               Launch a payment page tailored to your brand quickly and easily.
             </p>
           </div>
 
-          {/* Real-time Analytics */}
+          {/* AI-Powered Fraud Detection */}
           <div className="explore-feature-card">
-            <AnalyticsIcon />
-            <h3 className="explore-feature-title">Real-time Analytics</h3>
+            <img src="/brain.svg" alt="Credit Card" className="explore-feature-icon" />
+            <h3 className="explore-feature-title">AI-Powered Fraud Detection</h3>
             <p className="explore-feature-description">
-              Track your payment performance with detailed insights and reporting.
+              Benefit from protection using advanced AI and machine learning algorithms.
             </p>
           </div>
 
-          {/* Advanced Security */}
+          {/* Live Transaction Insights */}
           <div className="explore-feature-card">
-            <SecurityIcon />
-            <h3 className="explore-feature-title">Advanced Security</h3>
+            <img src="/chart-histogram.svg" alt="Credit Card" className="explore-feature-icon" />
+            <h3 className="explore-feature-title">Live Transaction Insights</h3>
             <p className="explore-feature-description">
-              Bank-level security with fraud detection and PCI compliance.
+              Access real-time analytics to monitor payments, refunds, and chargebacks.
             </p>
           </div>
 
-          {/* Multi-currency Support */}
+          {/* Secure Transactions */}
           <div className="explore-feature-card">
-            <MultiCurrencyIcon />
-            <h3 className="explore-feature-title">Multi-currency Support</h3>
+            <img src="/shield-half-filled.svg" alt="Credit Card" className="explore-feature-icon" />
+            <h3 className="explore-feature-title">Secure Transactions</h3>
             <p className="explore-feature-description">
-              Accept payments in multiple currencies with automatic conversion.
+              Ensure each payment is protected with advanced 3D Secure protocols.
             </p>
           </div>
 
-          {/* API Integration */}
+          {/* Advanced Merchant Dashboard */}
           <div className="explore-feature-card">
-            <ApiIcon />
-            <h3 className="explore-feature-title">API Integration</h3>
+            <img src="/layout-dashboard.svg" alt="Credit Card" className="explore-feature-icon" />
+            <h3 className="explore-feature-title">Advanced Merchant Dashboard</h3>
             <p className="explore-feature-description">
-              Seamlessly integrate with your existing systems and workflows.
+              Manage your operations efficiently with a flexible and robust back office system.
             </p>
           </div>
 
-          {/* 24/7 Support */}
+          {/* Automated Weekly Reporting */}
           <div className="explore-feature-card">
-            <SupportIcon />
-            <h3 className="explore-feature-title">24/7 Support</h3>
+            <img src="/file-analytics.svg" alt="Credit Card" className="explore-feature-icon" />
+            <h3 className="explore-feature-title">Automated Weekly Reporting</h3>
             <p className="explore-feature-description">
-              Get help whenever you need it with our dedicated support team.
+              Receive clear financial summaries delivered to your dashboard every week.
+            </p>
+          </div>
+
+          {/* Flexible Back Office Tools */}
+          <div className="explore-feature-card">
+            <img src="/apps.svg" alt="Credit Card" className="explore-feature-icon" />
+            <h3 className="explore-feature-title">Flexible Back Office Tools</h3>
+            <p className="explore-feature-description">
+              Customize your interface to view, organize, and export the data you need.
+            </p>
+          </div>
+
+          {/* Quick API Integration */}
+          <div className="explore-feature-card">
+            <img src="/api.svg" alt="Credit Card" className="explore-feature-icon" />
+            <h3 className="explore-feature-title">Quick API Integration</h3>
+            <p className="explore-feature-description">
+              Integrate your site with our API in no time using clear developer documentation.
+            </p>
+          </div>
+
+          {/* PCI DSS Compliance Ready */}
+          <div className="explore-feature-card">
+            <img src="/discount-check.svg" alt="Credit Card" className="explore-feature-icon" />
+            <h3 className="explore-feature-title">PCI DSS Compliance Ready</h3>
+            <p className="explore-feature-description">
+              Securely process transactions via PCI DSS-compliant server integration.
             </p>
           </div>
         </div>

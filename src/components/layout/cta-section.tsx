@@ -2,11 +2,11 @@ import { Button } from "@/components/ui/button"
 
 export function CtaSection() {
   return (
-    <section className="py-12 bg-[#16202a] border-b border-white/12">
+    <section className="py-12 bg-[#16202a] section-custom-border">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="bg-gradient-to-b from-[#00b8a8] to-[#00524b] rounded-[32px] flex flex-col lg:flex-row items-center">
           {/* Изображение */}
-          <div className="w-full lg:w-[50.74%] flex justify-center lg:justify-start">
+          <div className="w-full lg:w-[50.74%] flex justify-center lg:justify-center">
             <img 
               src="/image_a8d75ed0.png" 
               alt="Payment Experience" 

@@ -105,8 +105,7 @@ export function SolutionsSection() {
           <div className="shadow-[0px_5px_11px_rgba(0,0,0,0.10),0px_20px_20px_rgba(0,0,0,0.09),0px_46px_28px_rgba(0,0,0,0.05),0px_81px_33px_rgba(0,0,0,0.01),0px_127px_36px_rgba(0,0,0,0.00)] bg-gradient-to-b from-[#00b8a8] to-[#00524b] flex flex-col items-center gap-5 w-[352px] overflow-hidden px-7 py-9 rounded-[40px]">
             <div className="w-[88px] h-[88px]">
               <div className="border backdrop-blur-md bg-[rgba(255,255,255,0.12)] flex justify-center items-center flex-col h-20 px-4 rounded-[80px] border-solid">
-                API
-                {/* <ApiIcon /> */}
+                <img src="/api-solution.svg" alt="API" className="h-[37px] max-w-[initial] block" />
               </div>
               <div className="-mt-16 px-4">
                 <div className="bg-[white] h-[72px] w-[72px] rounded-[80px]" />
