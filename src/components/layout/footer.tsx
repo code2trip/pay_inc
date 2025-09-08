@@ -58,53 +58,107 @@ const MailIcon = ({ className }: { className?: string }) => (
 
 export function Footer() {
   return (
-    <footer className="bg-[#16202a] text-white pt-[26.5px] pb-[87px]">
-      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-        <div className="flex flex-col lg:flex-row items-stretch">
-          {/* Логотип и описание */}
-          <div className="w-full lg:w-[18.16%] pb-[15.5px]">
-            <img 
-              src="/image_2789c85f.png" 
-              alt="Pay.inc" 
-              className="h-8 w-[130px]"
-            />
-            <div className="mt-[17px]">
+    <>
+      {/* Десктопная версия */}
+      <footer className="footer-container bg-[#16202a] text-white pt-[26.5px] pb-[87px]">
+        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+          <div className="flex flex-col lg:flex-row items-stretch">
+            {/* Логотип и карты */}
+            <div className="w-full lg:w-[18.16%] pb-[15.5px]">
               <img 
-                src="/image_a255959f.png" 
-                alt="Pay.inc Description" 
-                className="h-[19.5px] w-[180px]"
+                src="/image_2789c85f.png" 
+                alt="Pay.inc" 
+                className="h-8 w-[130px]"
               />
-            </div>
-          </div>
-
-          {/* Ссылки */}
-          <div className="flex justify-center items-center flex-col w-full lg:w-[48.50%] pl-0 lg:pl-[164px] pb-[5px]">
-            <div className="flex justify-center items-center flex-col gap-2 w-[156px]">
-              <p className="text-sm font-medium text-white">Terms and Conditions</p>
-              <p className="text-sm font-medium text-center text-white">Website Policy</p>
-              <p className="text-sm font-medium text-center text-white">Cashier services</p>
-            </div>
-          </div>
-
-          {/* Контактная информация */}
-          <div className="flex justify-start items-end flex-col w-full lg:w-[33.33%] pt-[5px]">
-            <div className="flex justify-center items-end flex-col gap-2 w-[239px]">
-              <div className="flex justify-start items-start flex-row gap-2">
-                <PhoneIcon className="w-5 h-5 flex grow-0 shrink-0 basis-auto box-border overflow-hidden" />
-                <p className="text-sm font-medium uppercase text-white">+1 (123) 456-7890</p>
+              <div className="mt-[17px]">
+                <img 
+                  src="/image_a255959f.png" 
+                  alt="Pay.inc cards" 
+                  className="h-[19.5px] w-[180px]"
+                />
               </div>
-              <div className="flex justify-start items-end flex-row gap-2">
-                <MailIcon className="w-5 h-5 flex grow-0 shrink-0 basis-auto box-border overflow-hidden" />
-                <p className="text-sm font-medium text-white">info@payinc.com</p>
+            </div>
+
+            {/* Ссылки */}
+            <div className="flex justify-center items-center flex-col w-full lg:w-[48.50%] pl-0 lg:pl-[164px] pb-[5px]">
+              <div className="flex justify-center items-center flex-col gap-2 w-[156px]">
+                <p className="text-sm font-medium text-white">Terms and Conditions</p>
+                <p className="text-sm font-medium text-center text-white">Website Policy</p>
+                <p className="text-sm font-medium text-center text-white">Cashier services</p>
               </div>
-              <div className="flex justify-start items-center flex-row gap-2">
-                <MapPinIcon className="w-5 h-5 flex grow-0 shrink-0 basis-auto box-border overflow-hidden" />
-                <p className="text-sm font-medium text-white">Pineapple Loft, 22 Pink St, NY</p>
+            </div>
+
+            {/* Контактная информация */}
+            <div className="flex justify-start items-end flex-col w-full lg:w-[33.33%] pt-[5px]">
+              <div className="flex justify-center items-end flex-col gap-2 w-[239px]">
+                <div className="flex justify-start items-start flex-row gap-2">
+                  <PhoneIcon className="w-5 h-5 flex grow-0 shrink-0 basis-auto box-border overflow-hidden" />
+                  <p className="text-sm font-medium uppercase text-white">+1 (123) 456-7890</p>
+                </div>
+                <div className="flex justify-start items-end flex-row gap-2">
+                  <MailIcon className="w-5 h-5 flex grow-0 shrink-0 basis-auto box-border overflow-hidden" />
+                  <p className="text-sm font-medium text-white">info@payinc.com</p>
+                </div>
+                <div className="flex justify-start items-center flex-row gap-2">
+                  <MapPinIcon className="w-5 h-5 flex grow-0 shrink-0 basis-auto box-border overflow-hidden" />
+                  <p className="text-sm font-medium text-white">Pineapple Loft, 22 Pink St, NY</p>
+                </div>
               </div>
             </div>
           </div>
         </div>
+      </footer>
+
+      {/* Мобильная версия */}
+      <div className="mobile-footer">
+        {/* Логотип - по центру, выше всех */}
+        <img 
+          src="/image_2789c85f.png" 
+          alt="Pay.inc" 
+          className="mobile-footer-logo"
+        />
+
+        {/* Ссылки - по центру под логотипом */}
+        <div className="mobile-footer-nav">
+          <Link href="#" className="mobile-footer-nav-link">Terms and Conditions</Link>
+          <Link href="#" className="mobile-footer-nav-link">Website Policy</Link>
+          <Link href="#" className="mobile-footer-nav-link">Cashier services</Link>
+        </div>
+
+        {/* Контактная информация - по центру под ссылками */}
+        <div className="mobile-footer-contact">
+          {/* Телефон */}
+          <div className="mobile-footer-phone">
+            <div className="mobile-footer-phone-icon">
+              <PhoneIcon className="w-4 h-4" />
+            </div>
+            <p className="mobile-footer-phone-text">+1 (123) 456-7890</p>
+          </div>
+
+          {/* Email */}
+          <div className="mobile-footer-email">
+            <div className="mobile-footer-email-icon">
+              <MailIcon className="w-4 h-4" />
+            </div>
+            <p className="mobile-footer-email-text">info@payinc.com</p>
+          </div>
+
+          {/* Адрес */}
+          <div className="mobile-footer-address">
+            <div className="mobile-footer-address-icon">
+              <MapPinIcon className="w-4 h-4" />
+            </div>
+            <p className="mobile-footer-address-text">Pineapple Loft, 22 Pink St, NY</p>
+          </div>
+        </div>
+
+        {/* Карты - внизу по центру */}
+        <img 
+          src="/image_a255959f.png" 
+          alt="Pay.inc cards" 
+          className="mobile-footer-cards"
+        />
       </div>
-    </footer>
+    </>
   )
 }

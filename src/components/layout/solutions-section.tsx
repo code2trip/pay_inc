@@ -10,7 +10,6 @@ const CheckIcon = () => (
 )
 
 // Иконки заменены на CSS классы с изображениями
-
 const LabelIcon = () => (
   <img 
     src="/circle-check.png" 
@@ -66,9 +65,9 @@ export function SolutionsSection() {
         </div>
 
         {/* Карточки решений */}
-        <div className="solutions-cards-container">
+        <div className="flex flex-col items-center gap-5 w-full px-4 md:flex-row md:justify-center md:gap-6 md:px-0">
           {/* SaaS Card */}
-          <div className="shadow-[0px_5px_10px_rgba(0,0,0,0.10),0px_18px_18px_rgba(0,0,0,0.09),0px_41px_24px_rgba(0,0,0,0.05),0px_72px_29px_rgba(0,0,0,0.01),0px_113px_32px_rgba(0,0,0,0.00)] bg-[white] flex flex-col items-center gap-5 w-[352px] h-[388px] overflow-hidden px-7 py-9 rounded-[40px]">
+          <div className="solution-card-white">
             <div className="w-[88px] h-[88px]">
               <div className="border backdrop-blur-md bg-[rgba(255,255,255,0.12)] flex justify-center items-stretch flex-col w-full h-20 px-[22px] rounded-[80px] border-solid">
                 <img src="/image_b4a065f7.png" alt="" className="h-[37px] max-w-[initial] block" />
@@ -102,7 +101,7 @@ export function SolutionsSection() {
           </div>
 
           {/* API & Integration Card */}
-          <div className="shadow-[0px_5px_11px_rgba(0,0,0,0.10),0px_20px_20px_rgba(0,0,0,0.09),0px_46px_28px_rgba(0,0,0,0.05),0px_81px_33px_rgba(0,0,0,0.01),0px_127px_36px_rgba(0,0,0,0.00)] bg-gradient-to-b from-[#00b8a8] to-[#00524b] flex flex-col items-center gap-5 w-[352px] overflow-hidden px-7 py-9 rounded-[40px]">
+          <div className="solution-card-gradient">
             <div className="w-[88px] h-[88px]">
               <div className="border backdrop-blur-md bg-[rgba(255,255,255,0.12)] flex justify-center items-center flex-col h-20 px-4 rounded-[80px] border-solid">
                 <img src="/api-solution.svg" alt="API" className="h-[37px] max-w-[initial] block" />
@@ -119,33 +118,43 @@ export function SolutionsSection() {
                 Seamless tools for developers:
               </p>
               <div className="flex flex-col gap-2">
-                <div className="flex items-center gap-2">
-                  <LabelIcon />
-                  <p className="font-montserrat text-sm font-medium text-left leading-[14px] text-[#016b61]">
+                <div className="flex items-start gap-3 w-full">
+                  <div className="flex-shrink-0 mt-0.5">
+                    <LabelIcon />
+                  </div>
+                  <p className="font-montserrat text-sm font-medium text-left leading-relaxed text-[#016b61] flex-1">
                     One-click API connectivity
                   </p>
                 </div>
-                <div className="flex items-center gap-2">
-                  <LabelIcon />
-                  <p className="font-montserrat text-sm font-medium text-left leading-[14px] text-[#016b61]">
+                <div className="flex items-start gap-3 w-full">
+                  <div className="flex-shrink-0 mt-0.5">
+                    <LabelIcon />
+                  </div>
+                  <p className="font-montserrat text-sm font-medium text-left leading-relaxed text-[#016b61] flex-1">
                     White-label payment pages
                   </p>
                 </div>
-                <div className="flex items-center gap-2">
-                  <LabelIcon />
-                  <p className="font-montserrat text-sm font-medium text-left leading-[14px] text-[#016b61]">
+                <div className="flex items-start gap-3 w-full">
+                  <div className="flex-shrink-0 mt-0.5">
+                    <LabelIcon />
+                  </div>
+                  <p className="font-montserrat text-sm font-medium text-left leading-relaxed text-[#016b61] flex-1">
                     Real-time analytics dashboard
                   </p>
                 </div>
-                <div className="flex items-center gap-2">
-                  <LabelIcon />
-                  <p className="font-montserrat text-sm font-medium text-left leading-[14px] text-[#016b61]">
+                <div className="flex items-start gap-3 w-full">
+                  <div className="flex-shrink-0 mt-0.5">
+                    <LabelIcon />
+                  </div>
+                  <p className="font-montserrat text-sm font-medium text-left leading-relaxed text-[#016b61] flex-1">
                     AI-powered fraud detection
                   </p>
                 </div>
-                <div className="flex items-center gap-2">
-                  <LabelIcon />
-                  <p className="font-montserrat text-sm font-medium text-left leading-[14px] text-[#016b61]">
+                <div className="flex items-start gap-3 w-full">
+                  <div className="flex-shrink-0 mt-0.5">
+                    <LabelIcon />
+                  </div>
+                  <p className="font-montserrat text-sm font-medium text-left leading-relaxed text-[#016b61] flex-1">
                     Full PCI DSS compliance
                   </p>
                 </div>
@@ -154,7 +163,7 @@ export function SolutionsSection() {
           </div>
 
           {/* Global Payment Processing Card */}
-          <div className="shadow-[0px_5px_10px_rgba(0,0,0,0.10),0px_18px_18px_rgba(0,0,0,0.09),0px_41px_24px_rgba(0,0,0,0.05),0px_73px_29px_rgba(0,0,0,0.01),0px_113px_32px_rgba(0,0,0,0.00)] bg-[white] flex flex-col items-center gap-5 w-[352px] h-[388px] overflow-hidden px-7 py-8 rounded-[40px]">
+          <div className="solution-card-white">
             <div className="w-[88px] h-[88px]">
               <div className="border backdrop-blur-md bg-[rgba(255,255,255,0.12)] flex justify-center items-stretch flex-col w-full h-20 px-5 rounded-[80px] border-solid">
                 <img src="/image_231d932c.png" alt="" className="h-[41px] max-w-[initial] block" />
