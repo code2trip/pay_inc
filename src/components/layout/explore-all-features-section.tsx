@@ -28,8 +28,8 @@ const ButtonIcon = () => (
 
 export function ExploreAllFeaturesSection() {
   return (
-    <section className="explore-section">
-      <div className="explore-container">
+    <section id="features" className="explore-section">
+      <div className="w-[80%] max-w-[1250px] mx-auto px-5 explore-container">
         {/* Заголовок */}
         <div className="explore-header">
           <h2 className="explore-title">
@@ -44,7 +44,7 @@ export function ExploreAllFeaturesSection() {
         </div>
 
         {/* Сетка функций */}
-        <div className="explore-features-grid">
+        <div className="explore-features-grid w-full">
           {/* Custom Branded Checkout */}
           <div className="explore-feature-card">
             <img src="/credit-card.svg" alt="Credit Card" className="explore-feature-icon" />
@@ -128,7 +128,15 @@ export function ExploreAllFeaturesSection() {
         </div>
 
         {/* Кнопка */}
-        <button className="explore-button">
+        <button 
+          className="explore-button"
+          onClick={() => {
+            const contactsSection = document.getElementById('contacts');
+            if (contactsSection) {
+              contactsSection.scrollIntoView({ behavior: 'smooth' });
+            }
+          }}
+        >
           contact us
           <ButtonIcon />
         </button>

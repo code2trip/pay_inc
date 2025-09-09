@@ -2,11 +2,11 @@ import { Button } from "@/components/ui/button"
 
 export function CtaSection() {
   return (
-    <section className="py-12 bg-[#16202a] section-custom-border">
-      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+    <section id="contacts" className="py-12 bg-[#16202a] section-custom-border">
+      <div className="w-[80%] max-w-[1250px] mx-auto px-5">
         <div className="bg-gradient-to-b from-[#00b8a8] to-[#00524b] rounded-[32px] flex flex-col lg:flex-row items-center">
           {/* Изображение */}
-          <div className="w-full lg:w-[50.74%] flex justify-center lg:justify-center">
+          <div className="w-full lg:w-[50%] flex justify-center lg:justify-center">
             <img 
               src="/image_a8d75ed0.png" 
               alt="Payment Experience" 
@@ -15,7 +15,7 @@ export function CtaSection() {
           </div>
           
           {/* Контент */}
-          <div className="w-full lg:w-[49.26%] px-4 lg:px-[15px] py-10 flex flex-col items-center lg:items-start">
+          <div className="w-full lg:w-[50%] px-4 lg:px-[15px] py-5 flex flex-col items-center lg:items-start">
             <h2 className="text-[32px] font-medium text-white text-center lg:text-left leading-8 mb-5">
               Ready to transform
               <br />

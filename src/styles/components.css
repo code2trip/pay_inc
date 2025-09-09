@@ -1,3 +1,7 @@
+header {
+  overflow: visible !important;
+}
+
 /* Language Selector Styles */
 .language-selector {
   display: flex;
@@ -65,6 +69,17 @@
 
 /* Language Selector Container */
 .language-selector-container {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  box-sizing: border-box;
+  overflow: visible;
+  width: 140px;
+  height: 40px;
+}
+
+.language-selector {
   display: flex;
   flex-direction: row;
   justify-content: center;
@@ -74,8 +89,70 @@
   width: 140px;
   height: 40px;
   border-radius: 14px;
-  border: 1px solid #e5e7eb;
-  box-sizing: border-box;
+  cursor: pointer;
+  transition: all 0.2s ease;
+}
+
+.language-selector:hover {
+  background-color: rgba(0, 184, 168, 0.1);
+}
+
+/* Language Dropdown */
+.language-dropdown {
+  position: absolute;
+  right: 0;
+  width: 140px;
+  background: #ececec;
+  border: 1px solid #00B8A8;
+  border-radius: 14px;
+  z-index: 9999;
+  padding: 10px;
+  box-shadow: 0 0 0 1px #00B8A8;
+}
+
+.language-option {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  padding: 9px 8px 9px 16px;
+  width: 100%;
+  height: 40px;
+  cursor: pointer;
+  transition: background-color 0.2s ease;
+  border-radius: 14px;
+  margin-bottom: 8px;
+  background: transparent;
+}
+
+.language-option:hover {
+  background-color: rgba(0, 184, 168, 0.1);
+}
+
+.language-option-selected {
+  background-color: rgba(0, 184, 168, 0.1);
+}
+
+.language-option-text {
+  font-family: 'Montserrat', sans-serif;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 150%;
+  text-align: left;
+  text-transform: uppercase;
+  background: linear-gradient(134.45deg, #00B8A8 0%, #00524B 125.01%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  flex: 1;
+}
+
+.language-option-icon {
+  width: 10px;
+  height: 5px;
+  flex-shrink: 0;
+  margin-left: 8px;
 }
 
 /* Button Styles */
@@ -214,8 +291,8 @@
   background-size: contain;
   background-repeat: no-repeat;
   background-position: center;
-  mask: linear-gradient(to top, rgb(255, 255, 255, 0) 35%, rgb(251, 251, 251) 50%);
-  -webkit-mask: linear-gradient(to top, rgb(255, 255, 255, 0) 35%, rgb(255, 255, 255) 50%);
+  mask: linear-gradient(to top, rgb(255, 255, 255, 0) 37%, rgb(251, 251, 251) 50%);
+  -webkit-mask: linear-gradient(to top, rgb(255, 255, 255, 0) 37%, rgb(255, 255, 255) 50%);
 }
 
 .mockup-left {
@@ -240,8 +317,8 @@
   background-size: contain;
   background-repeat: no-repeat;
   background-position: center;
-  mask: linear-gradient(to top, rgb(255, 255, 255, 0.1) 15%, rgb(251, 251, 251) 35%);
-  -webkit-mask: linear-gradient(to top, rgb(255, 255, 255, 0.1) 15%, rgb(255, 255, 255) 35%);
+  mask: linear-gradient(to top, rgb(255, 255, 255, 0.1) 33%, rgb(251, 251, 251) 35%);
+  -webkit-mask: linear-gradient(to top, rgb(255, 255, 255, 0.1) 33%, rgb(255, 255, 255) 35%);
 }
 
 .hero-title {
@@ -1104,9 +1181,7 @@ header::before {
 /* Header Container (Frame 25) */
 .header-container {
   position: relative;
-  width: 100%;
-  max-width: 1080px;
-  height: 40px;
+  min-height: 40px;
   margin: 0 auto;
   top: calc(50% - 40px/2);
   display: flex;
@@ -1116,6 +1191,7 @@ header::before {
   padding: 0 20px;
   gap: 20px;
   z-index: 1;
+  overflow: visible;
 }
 
 /* Header Logo */
@@ -1223,10 +1299,11 @@ header::before {
   padding: 0px;
   gap: 12px;
   width: 292px;
-  height: 40px;
+  min-height: 40px;
   flex: none;
   order: 2;
   flex-grow: 0;
+  overflow: visible;
 }
 
 /* Language Selector */
@@ -1368,9 +1445,8 @@ header::before {
   display: flex;
   flex-direction: column;
   align-items: center;
-  padding: 80px 0;
-  gap: 78px;
-  width: 1080px;
+  padding-top: 15px;
+  padding-bottom: 45px;
   margin: 0 auto;
   text-align: left;
 }
@@ -1382,7 +1458,7 @@ header::before {
   padding: 0px;
   gap: 20px;
   width: 100%;
-  max-width: 774px;
+  max-width: 1080px;
   height: auto;
   min-height: 83px;
 }
@@ -1402,7 +1478,7 @@ header::before {
   color: #000000;
   flex: none;
   order: 0;
-  align-self: stretch;
+  align-self: center;
   flex-grow: 0;
   word-wrap: break-word;
   overflow-wrap: break-word;
@@ -1623,6 +1699,9 @@ header::before {
   align-items: center;
   padding: 80px 0;
   gap: 60px;
+  margin: 0 auto;
+  padding-left: 20px;
+  padding-right: 20px;
 }
 
 .explore-header {
@@ -1695,7 +1774,6 @@ header::before {
   justify-content: center;
   gap: 8px;
   box-sizing: border-box;
-  margin-top: 32px;
   border-radius: 16px;
   border: none;
   transition: all 0.2s ease;
@@ -1723,8 +1801,6 @@ header::before {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   gap: 12px;
-  width: 100%;
-  max-width: 1080px;
 }
 
 .explore-feature-card {
@@ -1966,6 +2042,15 @@ header::before {
     justify-content: center;
   }
 
+  .mobile-language-selector-container {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    width: 140px;
+    height: 40px;
+  }
+
   .mobile-language-selector {
     display: flex;
     flex-direction: row;
@@ -1979,6 +2064,78 @@ header::before {
     border: 1px solid #00B8A8;
     background: transparent;
     cursor: pointer;
+    transition: all 0.2s ease;
+  }
+
+  .mobile-language-selector:hover {
+    background-color: rgba(0, 184, 168, 0.1);
+  }
+
+  /* Mobile Language Dropdown */
+  .mobile-language-dropdown {
+    position: absolute;
+    top: 0;
+    left: 0;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    padding: 10px 0 10px 10px;
+    gap: 8px;
+    width: 140px;
+    height: auto;
+    border-radius: 14px;
+    border: 1px solid #00B8A8;
+    background: #ececec;
+    box-shadow: 0 0 0 1px #00B8A8;
+    cursor: pointer;
+    z-index: 9999;
+    transition: all 0.2s ease;
+    display: flex;
+  }
+
+  .mobile-language-option {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    padding: 9px 8px 9px 16px;
+    width: 100%;
+    height: 40px;
+    cursor: pointer;
+    transition: background-color 0.2s ease;
+    border-radius: 14px;
+    margin-bottom: 8px;
+    background: transparent;
+  }
+
+  .mobile-language-option:hover {
+    background-color: rgba(0, 184, 168, 0.1);
+  }
+
+  .mobile-language-option-selected {
+    background-color: rgba(0, 184, 168, 0.1);
+  }
+
+  .mobile-language-option-text {
+    font-family: 'Montserrat', sans-serif;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 150%;
+    text-align: left;
+    text-transform: uppercase;
+    background: linear-gradient(134.45deg, #00B8A8 0%, #00524B 125.01%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+    flex: 1;
+  }
+
+  .mobile-language-option-icon {
+    width: 10px;
+    height: 5px;
+    flex-shrink: 0;
+    margin-left: 8px;
   }
 
   .mobile-language-text {
@@ -2080,8 +2237,10 @@ header::before {
       gap: 16px;
     }
 
+    .mobile-language-selector-container,
+    .mobile-login-button,
     .mobile-language-selector,
-    .mobile-login-button {
+    .mobile-language-dropdown {
       width: 100%;
       max-width: 280px;
     }
@@ -2245,7 +2404,6 @@ header::before {
     font-size: 20px;
     line-height: 24px;
     text-align: center;
-    margin-bottom: 30px;
     font-family: 'Montserrat', sans-serif;
     font-weight: 600;
     width: 100%;
@@ -2333,17 +2491,15 @@ header::before {
 
   /* Десктопная версия Solutions Section */
   .solutions-container {
-    padding: 80px 0;
+    padding-top: 15px;
+    padding-bottom: 45px;
     text-align: left;
-    width: 1080px;
-    max-width: 1080px;
   }
 
   .solutions-title {
     font-size: 32px;
     line-height: 38px;
-    text-align: left;
-    margin-bottom: 40px;
+    text-align: center;
   }
 
   .solutions-buttons-container {
@@ -2403,12 +2559,13 @@ header::before {
 @media (min-width: 768px) {
   .solution-card-gradient {
     width: 352px;
+    height: 428px;
     padding: 2.25rem 1.75rem;
     max-width: 352px;
   }
 }
 
-@media (min-width: 768px) and (max-width: 1023px) {
+@media (min-width: 768px) and (max-width: 1200px) {
   .explore-features-grid {
     grid-template-columns: repeat(2, 1fr);
     gap: 16px;

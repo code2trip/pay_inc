@@ -30,8 +30,8 @@ export function SolutionsSection() {
   }
 
   return (
-    <section className="py-20 bg-[#ececec]">
-      <div className="solutions-container">
+    <section id="fintech-solution" className="py-5 bg-[#ececec]">
+      <div className="solutions-container w-[80%] max-w-[1250px] mx-auto px-5">
         {/* Заголовок и кнопки */}
         <div className="solutions-header">
           <h2 className="solutions-title">
@@ -65,15 +65,15 @@ export function SolutionsSection() {
         </div>
 
         {/* Карточки решений */}
-        <div className="flex flex-col items-center gap-5 w-full px-4 md:flex-row md:justify-center md:gap-6 md:px-0">
+        <div className="flex flex-col items-center gap-5 w-full px-4 md:flex-row md:justify-center md:items-end md:gap-6 md:px-0">
           {/* SaaS Card */}
           <div className="solution-card-white">
             <div className="w-[88px] h-[88px]">
-              <div className="border backdrop-blur-md bg-[rgba(255,255,255,0.12)] flex justify-center items-stretch flex-col w-full h-20 px-[22px] rounded-[80px] border-solid">
-                <img src="/image_b4a065f7.png" alt="" className="h-[37px] max-w-[initial] block" />
+              <div className="border backdrop-blur-md bg-[rgba(255,255,255,0.12)] flex justify-center items-center w-[88px] h-[88px] rounded-full border-solid">
+                <img src="/image_b4a065f7.png" alt="" className="h-[37px] w-[37px] object-contain" />
               </div>
               <div className="-mt-16 px-4">
-                <div className="bg-gradient-to-br from-[#00b8a8] to-[#00524b] h-[72px] w-[72px] rounded-[80px]" />
+                <div className="bg-gradient-to-br from-[#00b8a8] to-[#00524b] h-[72px] w-[72px] rounded-full" />
               </div>
             </div>
             <p className="font-montserrat text-base font-semibold text-center leading-[19px] text-[black]">
@@ -103,11 +103,11 @@ export function SolutionsSection() {
           {/* API & Integration Card */}
           <div className="solution-card-gradient">
             <div className="w-[88px] h-[88px]">
-              <div className="border backdrop-blur-md bg-[rgba(255,255,255,0.12)] flex justify-center items-center flex-col h-20 px-4 rounded-[80px] border-solid">
-                <img src="/api-solution.svg" alt="API" className="h-[37px] max-w-[initial] block" />
+              <div className="border backdrop-blur-md bg-[rgba(255,255,255,0.12)] flex justify-center items-center w-[88px] h-[88px] rounded-full border-solid">
+                <img src="/api-solution.svg" alt="API" className="h-[37px] w-[37px] object-contain" />
               </div>
               <div className="-mt-16 px-4">
-                <div className="bg-[white] h-[72px] w-[72px] rounded-[80px]" />
+                <div className="bg-[white] h-[72px] w-[72px] rounded-full" />
               </div>
             </div>
             <p className="font-montserrat text-base font-semibold text-center leading-[19px] text-[white]">
@@ -165,11 +165,11 @@ export function SolutionsSection() {
           {/* Global Payment Processing Card */}
           <div className="solution-card-white">
             <div className="w-[88px] h-[88px]">
-              <div className="border backdrop-blur-md bg-[rgba(255,255,255,0.12)] flex justify-center items-stretch flex-col w-full h-20 px-5 rounded-[80px] border-solid">
-                <img src="/image_231d932c.png" alt="" className="h-[41px] max-w-[initial] block" />
+              <div className="border backdrop-blur-md bg-[rgba(255,255,255,0.12)] flex justify-center items-center w-[88px] h-[88px] rounded-full border-solid">
+                <img src="/image_231d932c.png" alt="" className="h-[41px] w-[41px] object-contain" />
               </div>
               <div className="-mt-16 px-4">
-                <div className="bg-gradient-to-br from-[#00b8a8] to-[#00524b] h-[72px] w-[72px] rounded-[80px]" />
+                <div className="bg-gradient-to-br from-[#00b8a8] to-[#00524b] h-[72px] w-[72px] rounded-full" />
               </div>
             </div>
             <p className="font-montserrat text-base font-semibold text-center leading-[19px] text-[black]">

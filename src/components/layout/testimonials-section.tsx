@@ -25,7 +25,7 @@ export function TestimonialsSection() {
 
   return (
     <section id="testimonials" className="py-20 bg-[#f3f3f3]">
-      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div className="w-[80%] max-w-[1250px] mx-auto px-5">
         <div className="text-center mb-16">
           <h2 className="text-2xl font-semibold text-center leading-[29px] uppercase text-[black] mb-5">
             What our customers say
