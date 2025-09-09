@@ -29,7 +29,12 @@ const ButtonIcon = () => (
 export function ExploreAllFeaturesSection() {
   return (
     <section id="features" className="explore-section">
-      <div className="w-[80%] max-w-[1250px] mx-auto px-5 explore-container">
+      {/* Background SVG */}
+      <div className="explore-background-svg">
+        <img src="/features-tables.svg" alt="Background" className="features-tables-bg" />
+      </div>
+      
+      <div className="w-[90%] md:w-[80%] lg:w-[80%] max-w-[1250px] mx-auto lg:px-5 explore-container">
         {/* Заголовок */}
         <div className="explore-header">
           <h2 className="explore-title">

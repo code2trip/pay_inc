@@ -4,22 +4,26 @@ import "@/styles/components.css"
 export function HeroSection() {
   return (
     <section className="hero-section">
-      <div className="w-[80%] max-w-[1250px] mx-auto px-5">
-        <div className="hero-content">
-          {/* Phone Mockup Block */}
-          <div className="hero-phone-container">
-            <div className="phone-left"></div>
-            <div className="phone-right"></div>
-            <div className="mockup-left"></div>
-            <div className="mockup-right"></div>
-          </div>
-          
-          <div className="hero-text-container">
-            <h1 className="hero-title">
-              Accept payments and manage
-              <br />
-              your business online!
-            </h1>
+      {/* Background SVG */}
+      <div className="hero-background-svg">
+        <img src="/features-tables.svg" alt="Background" className="features-tables-bg" />
+      </div>
+      <div className="w-[90%] md:w-[80%] lg:w-[80%] max-w-[1250px] mx-auto lg:px-5">
+          <div className="hero-content">
+            {/* Phone Mockup Block */}
+            <div className="hero-phone-container">
+              <div className="phone-left"></div>
+              <div className="phone-right"></div>
+              <div className="mockup-left"></div>
+              <div className="mockup-right"></div>
+            </div>
+            
+            <div className="hero-text-container">
+              <h1 className="hero-title">
+                Accept payments and manage
+                <br />
+                your business online!
+              </h1>
             <p className="hero-description">
               Easily connect your website with a secure payment gateway and ensure payment transfer of funds directly to your merchant account.
             </p>

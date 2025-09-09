@@ -3,12 +3,14 @@ import { Button } from "@/components/ui/button"
 import Link from "next/link"
 import "@/styles/components.css"
 import { useState, useEffect, useRef } from "react"
+import { useRouter } from "next/navigation"
 
 export function Header() {
   const [isMenuOpen, setIsMenuOpen] = useState(false)
   const [isLanguageOpen, setIsLanguageOpen] = useState(false)
   const [selectedLanguage, setSelectedLanguage] = useState('ENGLISH')
   const languageRef = useRef<HTMLDivElement>(null)
+  const router = useRouter()
 
   const toggleMenu = () => {
     setIsMenuOpen(!isMenuOpen)
@@ -48,7 +50,7 @@ export function Header() {
         {/* Logo */}
         <div className="header-logo">
           <img
-            src="/logo_payinc.png"
+            src="/logo_payinc.svg"
             alt="Pay.inc"
             className="logo-image"
           />
@@ -144,7 +146,10 @@ export function Header() {
           </div>
 
           {/* Log In Button */}
-          <button className="header-button-default">
+          <button 
+            className="header-button-default"
+            onClick={() => router.push('/login')}
+          >
             <span className="header-button-text">LOG IN</span>
           </button>
         </div>
@@ -155,7 +160,7 @@ export function Header() {
         {/* Logo */}
         <div className="mobile-header-logo">
           <img
-            src="/logo_payinc.png"
+            src="/logo_payinc.svg"
             alt="Pay.inc"
           />
         </div>
@@ -187,7 +192,7 @@ export function Header() {
           <div className="mobile-menu-header">
             <div className="mobile-header-logo">
               <img
-                src="/logo_payinc.png"
+                src="/logo_payinc.svg"
                 alt="Pay.inc"
               />
             </div>
@@ -244,7 +249,10 @@ export function Header() {
                   </div>
                 )}
               </div>
-              <button className="mobile-login-button">
+              <button 
+                className="mobile-login-button"
+                onClick={() => router.push('/login')}
+              >
                 <span className="mobile-login-text">LOG IN</span>
               </button>
             </div>

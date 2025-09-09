@@ -3,7 +3,7 @@ import { Button } from "@/components/ui/button"
 export function CtaSection() {
   return (
     <section id="contacts" className="py-12 bg-[#16202a] section-custom-border">
-      <div className="w-[80%] max-w-[1250px] mx-auto px-5">
+      <div className="w-[90%] md:w-[80%] lg:w-[80%] max-w-[1250px] mx-auto px-5 contacts-block">
         <div className="bg-gradient-to-b from-[#00b8a8] to-[#00524b] rounded-[32px] flex flex-col lg:flex-row items-center">
           {/* Изображение */}
           <div className="w-full lg:w-[50%] flex justify-center lg:justify-center">
