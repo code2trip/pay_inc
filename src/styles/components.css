@@ -498,6 +498,11 @@ header {
   text-align: center;
 }
 
+.main-button-default:hover {
+  background: linear-gradient(180deg, #00C4B2 0%, #006B5F 186.25%);
+  box-shadow: 0px 16px 7px rgba(0, 0, 0, 0.02), 0px 9px 5px rgba(0, 0, 0, 0.06), 0px 4px 4px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.12);
+}
+
 .main-button-hover {
   display: flex;
   flex-direction: row;
@@ -591,6 +596,10 @@ header {
   order: 1;
   flex-grow: 0;
   text-align: center;
+}
+
+.secondary-button-default:hover {
+  background-color: rgba(0, 184, 168, 0.1);
 }
 
 .secondary-button-hover {
@@ -1793,6 +1802,11 @@ header::before {
   overflow: hidden;
   padding: 28px;
   border-radius: 24px;
+  border: 1px solid rgba(0, 184, 168, 0.00);
+}
+
+.explore-feature-card:hover {
+  box-shadow: 0px 6px 12px rgba(0,0,0,0.12), 0px 20px 20px rgba(0,0,0,0.06), 0px 44px 26px rgba(0,0,0,0.03), 0px 72px 30px rgba(0,0,0,0.015), 0px 110px 32px rgba(0,0,0,0.00);
 }
 
 .explore-feature-icon {
@@ -2507,6 +2521,13 @@ header::before {
   overflow: hidden;
   padding: 1.5rem 1.25rem;
   border-radius: 40px;
+  transition: all 0.3s ease;
+  cursor: pointer;
+}
+
+.solution-card-white:hover {
+  transform: translateY(-4px);
+  box-shadow: 0px 8px 20px rgba(0,0,0,0.15), 0px 25px 25px rgba(0,0,0,0.12), 0px 50px 30px rgba(0,0,0,0.08), 0px 85px 35px rgba(0,0,0,0.03), 0px 130px 40px rgba(0,0,0,0.00);
 }
 
 @media (min-width: 768px) {
@@ -2530,6 +2551,13 @@ header::before {
   overflow: hidden;
   padding: 1.5rem 1.25rem;
   border-radius: 40px;
+  transition: all 0.3s ease;
+  cursor: pointer;
+}
+
+.solution-card-gradient:hover {
+  transform: translateY(-4px);
+  box-shadow: 0px 8px 22px rgba(0,0,0,0.15), 0px 25px 25px rgba(0,0,0,0.12), 0px 50px 30px rgba(0,0,0,0.08), 0px 85px 35px rgba(0,0,0,0.03), 0px 130px 40px rgba(0,0,0,0.00);
 }
 
 @media (min-width: 768px) {

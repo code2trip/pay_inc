@@ -66,7 +66,7 @@ export function Footer() {
             {/* Логотип и карты */}
             <div className="w-full lg:w-[18.16%] pb-[15.5px]">
               <img 
-                src="/image_2789c85f.png" 
+                src="/logo_footer.svg" 
                 alt="Pay.inc" 
                 className="h-8 w-[130px]"
               />
@@ -113,7 +113,7 @@ export function Footer() {
       <div className="mobile-footer">
         {/* Логотип - по центру, выше всех */}
         <img 
-          src="/image_2789c85f.png" 
+          src="/logo_footer.svg" 
           alt="Pay.inc" 
           className="mobile-footer-logo"
         />

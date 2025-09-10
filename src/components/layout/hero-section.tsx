@@ -1,3 +1,5 @@
+"use client"
+
 import { Button } from "@/components/ui/button"
 import "@/styles/components.css"
 
@@ -29,7 +31,14 @@ export function HeroSection() {
             </p>
 
             <div className="hero-buttons-container">
-              <button className="main-button-default">
+              <button className="main-button-default"
+                onClick={() => {
+                  const contactsSection = document.getElementById('contacts');
+                  if (contactsSection) {
+                    contactsSection.scrollIntoView({ behavior: 'smooth' });
+                  }
+                }}
+              >
                 <span className="main-button-text">Get Started</span>
                 <div className="button-icon">
                   <svg fill="none" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
@@ -37,7 +46,14 @@ export function HeroSection() {
                   </svg>
                 </div>
               </button>
-              <button className="secondary-button-default">
+              <button className="secondary-button-default"
+                onClick={() => {
+                  const features = document.getElementById('features');
+                  if (features) {
+                    features.scrollIntoView({ behavior: 'smooth' });
+                  }
+                }}
+              >
                 <span className="secondary-button-text-default">Discover pay.inc</span>
                 <div className="button-icon">
                   <svg fill="none" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">

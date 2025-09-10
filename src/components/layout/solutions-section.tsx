@@ -76,7 +76,7 @@ export function SolutionsSection() {
                 <div className="bg-gradient-to-br from-[#00b8a8] to-[#00524b] h-[72px] w-[72px] rounded-full" />
               </div>
             </div>
-            <p className="font-montserrat text-base font-semibold text-center leading-[19px] text-[black]">
+            <p className="font-montserrat text-lg font-semibold text-center leading-[22px] mt-2 text-[black]">
               SaaS (Software-as-a-Service)
             </p>
             <div className="bg-[#f3f3f3] flex flex-col gap-5 w-full px-[18px] py-5 rounded-[20px]">
@@ -110,7 +110,7 @@ export function SolutionsSection() {
                 <div className="bg-[white] h-[72px] w-[72px] rounded-full" />
               </div>
             </div>
-            <p className="font-montserrat text-base font-semibold text-center leading-[19px] text-[white]">
+            <p className="font-montserrat text-lg font-semibold text-center leading-[22px] mt-2 text-[white]">
               API & Integration
             </p>
             <div className="bg-[white] flex flex-col gap-5 w-full px-[19px] py-5 rounded-[20px]">
@@ -172,7 +172,7 @@ export function SolutionsSection() {
                 <div className="bg-gradient-to-br from-[#00b8a8] to-[#00524b] h-[72px] w-[72px] rounded-full" />
               </div>
             </div>
-            <p className="font-montserrat text-base font-semibold text-center leading-[19px] text-[black]">
+            <p className="font-montserrat text-lg font-semibold text-center leading-[22px] mt-2 text-[black]">
               Global Payment Processing
             </p>
             <div className="bg-[#f3f3f3] flex flex-col gap-2 w-full px-[19px] py-5 rounded-[20px]">
